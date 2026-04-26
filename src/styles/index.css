@@ -2,6 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   LOVIA BASE DESIGN TOKENS
+   ========================= */
+
+:root {
+  --radius: 0.75rem;
+
+  /* Polished concrete background */
+  --background: oklch(0.985 0.003 260);
+  --foreground: oklch(0.18 0.012 260);
+
+  --surface: oklch(1 0 0);
+  --surface-elevated: oklch(1 0 0);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.012 260);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.012 260);
+
+  /* Primary = brushed steel ink */
+  --primary: oklch(0.22 0.012 260);
+  --primary-foreground: oklch(0.98 0.003 260);
+
+  --secondary: oklch(0.96 0.005 260);
+  --secondary-foreground: oklch(0.22 0.012 260);
+
+  --muted: oklch(0.96 0.005 260);
+  --muted-foreground: oklch(0.5 0.012 260);
+
+  /* Refined amethyst accent */
+  --accent: oklch(0.55 0.12 310);
+  --accent-foreground: oklch(0.99 0.003 260);
+  --accent-soft: oklch(0.55 0.12 310 / 0.1);
+
+  --success: oklch(0.6 0.12 160);
+  --success-foreground: oklch(0.99 0.003 260);
+
+  --warning: oklch(0.7 0.14 75);
+  --warning-foreground: oklch(0.18 0.012 260);
+
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.99 0.003 260);
+
+  --border: oklch(0.92 0.005 260);
+  --input: oklch(0.94 0.005 260);
+  --ring: oklch(0.55 0.12 310);
+
+  --chart-1: oklch(0.55 0.12 310);
+  --chart-2: oklch(0.6 0.12 200);
+  --chart-3: oklch(0.6 0.12 160);
+  --chart-4: oklch(0.7 0.14 75);
+  --chart-5: oklch(0.55 0.15 25);
+
+  --sidebar: oklch(0.98 0.004 260);
+  --sidebar-foreground: oklch(0.25 0.012 260);
+  --sidebar-primary: oklch(0.22 0.012 260);
+  --sidebar-primary-foreground: oklch(0.99 0.003 260);
+  --sidebar-accent: oklch(0.94 0.006 260);
+  --sidebar-accent-foreground: oklch(0.22 0.012 260);
+  --sidebar-border: oklch(0.92 0.005 260);
+  --sidebar-ring: oklch(0.55 0.12 310);
+}
+
+/* =========================
+   BASE STYLES
+   ========================= */
+
 body {
-  @apply bg-gray-50 text-gray-900;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+/* Reset simple */
+* {
+  box-sizing: border-box;
 }
