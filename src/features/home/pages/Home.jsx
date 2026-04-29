@@ -10,7 +10,7 @@ export default function home() {
           {/* LOGO */}
           <div className="flex items-center gap-2">
             <img
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Lovia"
               className="w-8 h-8 object-contain"
             />
@@ -78,7 +78,7 @@ export default function home() {
 
       {/* FOOTER */}
       <footer className="border-t border-border bg-card/50 px-4 py-6 text-center text-sm text-muted-foreground">
-        © Lovia. Serious matchmaking.
+        © Lovia. Relations authentiques.
       </footer>
     </div>
   );
