@@ -37,7 +37,7 @@
   /* Accent */
   --accent: oklch(0.55 0.12 310);
   --accent-foreground: oklch(0.99 0.003 260);
-  --accent-soft: oklch(0.55 0.12 310 / 0.1);
+  --accent-soft: oklch(0.65 0.14 310 / 0.15);
 
   /* States */
   --success: oklch(0.6 0.12 160);
