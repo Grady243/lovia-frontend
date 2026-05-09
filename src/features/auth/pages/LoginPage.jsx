@@ -44,7 +44,8 @@ export default function LoginPage() {
         </div>
       </div>
       {/* RIGHT SIDE */}
-      <div className="w-full lg:w-1/2 h-full flex items-center justify-center bg-background px-6">
+      <div className="w-full lg:w-1/2 h-full flex items-start lg:items-center justify-center bg-background px-6 py-8 lg:py-0">
+        {" "}
         <div className="w-full max-w-sm">
           {/* LOGO MOBILE ONLY */}
           <Link to="/" className="flex items-center gap-2 mb-6 lg:hidden">
@@ -59,7 +60,7 @@ export default function LoginPage() {
           </Link>
 
           {/* TITLE */}
-          <h2 className="text-4xl font-semibold">Bon retour</h2>
+          <h2 className="text-4xl font-semibold mt-12">Bon retour</h2>
 
           <p className="text-sm text-muted-foreground mt-2">
             Connecte-toi pour continuer ton expérience

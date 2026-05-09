@@ -3,7 +3,6 @@ import {
   Briefcase,
   Clock,
   Heart,
-  HelpCircle,
   MapPin,
   ShieldCheck,
   Sparkles,
@@ -97,12 +96,11 @@ export default function HowItWorks() {
 
           {/* MOBILE ACTIONS */}
           <div className="flex items-center gap-2 sm:hidden">
-            <button className="p-2 rounded-lg hover:bg-muted transition">
-              <HelpCircle className="w-5 h-5" />
-            </button>
-            <button className="p-2 rounded-lg hover:bg-muted transition">
-              <User className="w-5 h-5" />
-            </button>
+            <Link to="/login">
+              <button className="p-2 rounded-lg hover:bg-muted transition">
+                <User className="w-5 h-5" />
+              </button>
+            </Link>
           </div>
 
           {/* DESKTOP ACTIONS */}

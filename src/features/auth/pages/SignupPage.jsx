@@ -3,11 +3,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function LoginPage() {
+export default function SignupPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full h-[100vh] flex">
+    <div className="w-full min-h-screen lg:h-screen flex py-6 lg:py-0">
       {/* LEFT SIDE */}
       <div className="relative w-1/2 h-full hidden lg:flex flex-col justify-between md:p-12 overflow-hidden bg-primary">
         {/* GLOW TOP LEFT */}
@@ -62,7 +62,7 @@ export default function LoginPage() {
           </Link>
 
           {/* TITLE */}
-          <h2 className="text-4xl font-semibold">Bienvenue sur Lovia </h2>
+          <h2 className="text-4xl font-semibold mt-8">Bienvenue sur Lovia </h2>
 
           <p className="text-sm text-muted-foreground mt-2">
             Rejoins Lovia dès maintenant.
