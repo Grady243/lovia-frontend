@@ -21,12 +21,17 @@ export default function home() {
 
           {/* MOBILE ACTIONS */}
           <div className="flex items-center gap-2 sm:hidden">
-            <button className="p-2 rounded-lg hover:bg-muted transition">
+            <Link to="/commentçamarche">
+              <button className="p-2 rounded-lg hover:bg-muted transition">
               <HelpCircle className="w-5 h-5" />
             </button>
-            <button className="p-2 rounded-lg hover:bg-muted transition">
-              <User className="w-5 h-5" />
-            </button>
+            </Link>
+
+            <Link to="/login">
+              <button className="p-2 rounded-lg hover:bg-muted transition">
+                <User className="w-5 h-5" />
+              </button>
+            </Link>
           </div>
 
           {/* DESKTOP ACTIONS */}
